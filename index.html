@@ -5,13 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
 
+  <!-- Auto redirect -->
   <meta http-equiv="refresh" content="0; url=/portfolio.pdf" />
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, Arial;
+      background: #0b0b0b;
+      color: #ffffff;
+    }
+
+    .card {
+      text-align: center;
+      max-width: 420px;
+      padding: 30px;
+      border: 1px solid #222;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: black;
+      background: white;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+
+    a:hover {
+      transform: translateY(-2px);
+    }
+
+    .subtle {
+      margin-top: 14px;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
-  <p>
-    If you are not redirected,
-    <a href="/portfolio.pdf">click here to view the portfolio</a>.
-  </p>
+  <div class="card">
+    <h1>Opening portfolio</h1>
+    <p>If you are not redirected automatically, you can view it manually below.</p>
+
+    <a href="/portfolio.pdf">View Portfolio</a>
+
+    <div class="subtle">PDF hosted securely via Vercel</div>
+  </div>
 </body>
 </html>
